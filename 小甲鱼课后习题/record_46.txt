@@ -1,0 +1,23 @@
+The x variable was read at Thu Feb  1 10:58:32 2018, x = 10
+The y variable was read at Thu Feb  1 10:58:37 2018, y = Python
+The x variable was read at Sat Feb  3 12:11:47 2018, x = 10
+The x variable was deleted at Sat Feb  3 12:11:50 2018The x variable was read at Sat Feb  3 13:17:46 2018, x = 10
+The x variable was modified at Sat Feb  3 13:18:00 2018, x = 10
+The x variable was read at Sat Feb  3 13:18:01 2018, x = 10
+The y variable was read at Sat Feb  3 13:19:27 2018, y = None
+The y variable was modified at Sat Feb  3 13:19:48 2018, y = oo
+The y variable was read at Sat Feb  3 13:19:52 2018, y = oo
+The y variable was deleted at Sat Feb  3 13:19:56 2018
+The x variable was read at Sat Feb  3 13:20:47 2018, x = None
+The y variable was read at Sat Feb  3 13:20:53 2018, y = None
+The y variable was modified at Sat Feb  3 13:21:03 2018, y = 00
+The y variable was read at Sat Feb  3 13:21:05 2018, y = 00
+The y variable was deleted at Sat Feb  3 13:21:10 2018
+The y variable was read at Sat Feb  3 13:24:16 2018, y = None
+The y variable was modified at Sat Feb  3 13:24:20 2018, y = 89
+The y variable was read at Sat Feb  3 13:24:24 2018, y = 89
+The y variable was deleted at Sat Feb  3 13:24:27 2018
+The y variable was modified at Sat Feb  3 13:25:21 2018, y = 89
+The y variable was deleted at Sat Feb  3 13:25:26 2018
+The y variable was modified at Sat Feb  3 13:26:45 2018, y = 89
+The y variable was deleted at Sat Feb  3 13:26:48 2018
