@@ -1,5 +1,5 @@
 import random
-prime_number = [2, 3, 5, 7]  # 猜密码（猜数字升级版）
+prime_number = [2, 3, 5, 7]  # 猜密码(猜数字升级版)
 number = 0
 for i in range(2, 100):  # 得到100以内所有质数
     if i % 2 and i % 3 and i % 5 and i % 7 != 0:

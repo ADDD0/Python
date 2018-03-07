@@ -8,4 +8,4 @@ print('')
 for each in range(len(temp)):  # 另一个复杂解法
     if each % 2 == 0:
         print(temp[each], temp[each+1])
-# 学完25课时可用字典实现
+# 学完25课后可用字典实现
