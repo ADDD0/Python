@@ -2,6 +2,11 @@
   <dictionary name="Administrator">
     <words>
       <w>findstr</w>
+      <w>funin</w>
+      <w>funout</w>
+      <w>funx</w>
+      <w>funy</w>
+      <w>ordinery</w>
     </words>
   </dictionary>
 </component>

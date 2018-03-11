@@ -6,4 +6,4 @@ def test(*var, base=3):
     return result
 
 
-print(test(2, 3, 4))
+print(test(2, 3, 4, base=5))
