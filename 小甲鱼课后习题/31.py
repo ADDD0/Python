@@ -40,6 +40,6 @@ def split_file(file_name):
     f.close()
 
 
-split_file('29.txt')
+split_file('对话.txt')
 print('\nSave completed.')
 print('\nThe End')

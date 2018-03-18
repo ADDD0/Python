@@ -1,6 +1,6 @@
 def save_file(boy, girl, count):
-    file_name_boy = 'boy_' + str(count) + '.29.txt'
-    file_name_girl = 'girl_' + str(count) + '.29.txt'
+    file_name_boy = 'boy_' + str(count) + '.对话.txt'
+    file_name_girl = 'girl_' + str(count) + '.对话.txt'
 
     with open(file_name_boy, 'w') as f:
         f.writelines(boy)
@@ -30,5 +30,5 @@ def split_file(file_name):
 
 
 
-split_file('29.txt')
+split_file('对话.txt')
 print('\nSave completed.')
