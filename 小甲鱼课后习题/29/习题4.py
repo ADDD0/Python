@@ -1,4 +1,4 @@
-def file_advanced_view(file_name, rows):  # Program 4
+def file_advanced_view(file_name, rows):
     start, end = rows.split(':')
 
     if start == '':  # 对应情况':?'
