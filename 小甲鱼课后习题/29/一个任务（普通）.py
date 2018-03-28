@@ -1,4 +1,4 @@
-f = open('对话.txt', encoding='utf-8')
+f = open('对话.txt')
 
 boy = []
 girl = []
@@ -15,8 +15,8 @@ for each_line in f:  # 这里的each_line为str类型
         file_name_boy = 'boy_'+str(count)+'.txt'
         file_name_girl = 'girl_'+str(count)+'.txt'
 
-        boy_file = open(file_name_boy, 'w', encoding='gbk')  # 如果输出为乱码的话尝试修改一下文件编码为gbk
-        girl_file = open(file_name_girl, 'w', encoding='gbk')
+        boy_file = open(file_name_boy, 'w')  # 如果输出为乱码的话尝试修改一下文件编码为gbk
+        girl_file = open(file_name_girl, 'w')
 
         boy_file.writelines(boy)
         girl_file.writelines(girl)

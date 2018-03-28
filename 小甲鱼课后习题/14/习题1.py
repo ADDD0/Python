@@ -1,3 +1,4 @@
+# 尝试解开字符串
 temp = 'ii3l01oO8vu5e[gp+zy]9t,rhJLo6onnn'
 print(temp[::3])  # 最简版
 print(temp[0:32:3])  # 完整版

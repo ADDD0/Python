@@ -1,5 +1,5 @@
 def replace(file_name, org, sub):
-    file_read = open(file_name, encoding='utf-8')
+    file_read = open(file_name)
 
     content = []
     count = 0
@@ -14,7 +14,7 @@ def replace(file_name, org, sub):
                    '\nare you sure to replace all the [{}] with [{}]?'
                    '\n[Y/N]:'.format(count, org, file_name, org, sub))
     if decide == 'Y':
-        file_write = open(file_name, 'w', encoding='utf-8')
+        file_write = open(file_name, 'w')
         file_write.writelines(content)
         file_write.close()
     file_read.close()

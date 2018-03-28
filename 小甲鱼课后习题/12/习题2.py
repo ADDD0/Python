@@ -1,4 +1,5 @@
-list1 = []  # 复杂版
+# 用列表推导式推导下面的列表
+list1 = []
 for x in range(10):
     for y in range(10):
         if x % 2 == 0:  # 或者if not x % 2:

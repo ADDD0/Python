@@ -3,8 +3,8 @@ def compare(first_file_name, second_file_name):
     differ = []
     position = []
 
-    first_file = open(first_file_name, encoding='utf-8')
-    second_file = open(second_file_name, encoding='utf-8')
+    first_file = open(first_file_name)
+    second_file = open(second_file_name)
 
     while True:
         line1 = first_file.readline()

@@ -1,3 +1,4 @@
+# 编程实现sum()
 def sum1(obj):
     result = 0
     for i in obj:

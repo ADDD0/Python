@@ -15,7 +15,7 @@ def pos_in_line(line, keyword):
 
 def search_in_file(file_name, keyword):
     count = 0
-    f = open(file_name, encoding='utf-8', errors='ignore')
+    f = open(file_name, encoding='utf-8')
     for each_line in f:
         count += 1
         if keyword in each_line:

@@ -70,15 +70,15 @@ else:
             score_additional = 3
             if score2 == 25:
                 score_additional = 5
-    final_score = score1+score2+score3+score4+score_additional
+    final_score = score1 + score2 + score3 + score4 + score_additional
     if final_score <= 50:
-            print("It's final score is "+str(final_score)+'.So "'+password+'" is a Low-level password.')
+            print("It's final score is " + str(final_score) + '.So "' + password + '" is a Low-level password')
     if 50 < final_score <= 75:
-            print("It's final score is "+str(final_score)+'.So "'+password+'" is a Medium-level password.')
+            print("It's final score is " + str(final_score) + '.So "' + password + '" is a Medium-level password')
     if 75 < final_score <= 100:
-            print("It's final score is "+str(final_score)+'.So "'+password+'" is a High-level password.')
+            print("It's final score is " + str(final_score) + '.So "' + password + '" is a High-level password')
 print("""You can improve your password's level by:
     1. Increase the length.
     2. Add more alphabets and numbers.
     3. Add some uppercase letters or lowercase letters.
-    4. Add some special characters like '~!@#$%^&*()_=-/,.?<>;:[]{}\|'.""")
+    4. Add some special characters like '~!@#$%^&*()_=-/,.?<>;:[]{}\|'""")

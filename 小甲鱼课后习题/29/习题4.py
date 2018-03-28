@@ -18,7 +18,7 @@ def file_advanced_view(file_name, rows):
                   % (file_name, start, end)
     print(content)
 
-    file = open(file_name, encoding='utf-8')
+    file = open(file_name)
     lines = int(end)-int(start)+1  # 输出行数
     if lines < 0:
         print(file.read())

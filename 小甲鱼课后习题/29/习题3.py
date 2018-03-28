@@ -1,6 +1,6 @@
 def file_view(file_name, rows):
     print('The first %d lines of the file "%s" are as follows:' % (rows, file_name))
-    file = open(file_name, encoding='utf-8')
+    file = open(file_name)
 
     while rows:
         print(file.readline(), end='')  # 不加end=''的话会自动换行
