@@ -1,3 +1,4 @@
+# 编写一个程序,比较用户输入的两个文件,如果不同,显示出所有不同处的行号与第一个不同字符的位置
 def compare(first_file_name, second_file_name):
     count = 0
     differ = []
@@ -17,7 +18,7 @@ def compare(first_file_name, second_file_name):
             else:
                 for each in range(min(len(line1), len(line2))):  # 从开头到较短行的所有索引位置
                     if line1[each] != line2[each]:  # 判断每个字符是否相同
-                        position.append(each+1)
+                        position.append(each + 1)
                         break
         if line1 == '' and line2 == '':  # 文件末尾均为空字符
             break
@@ -33,7 +34,6 @@ def compare(first_file_name, second_file_name):
             print('There are differences in line %s at location %s' % (differ[each], position[each]))
 
 
-print('----------Determine whether the two documents are the same----------')
 first = input('\nPlease enter the first file name to be compared:')
 second = input('Please enter another file name to be compared:')
 compare(first, second)

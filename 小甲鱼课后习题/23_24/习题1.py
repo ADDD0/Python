@@ -1,3 +1,4 @@
+# 使用递归编写一个十进制转换为二进制的函数
 def dec2bin(dec):
     result = ''
     if dec == 0:

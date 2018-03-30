@@ -1,7 +1,7 @@
 # 以函数封装的形式实现
 def save_file(boy, girl, count):
-    file_name_boy = 'boy_'+str(count)+'.txt'
-    file_name_girl = 'girl_'+str(count)+'.txt'
+    file_name_boy = 'boy_' + str(count) + '.txt'
+    file_name_girl = 'girl_' + str(count) + '.txt'
 
     boy_file = open(file_name_boy, 'w')
     girl_file = open(file_name_girl, 'w')
@@ -38,4 +38,4 @@ def split_file(file_name):
 
 
 split_file('对话.txt')
-print('\nSave completed.')
+print('\nSave completed')

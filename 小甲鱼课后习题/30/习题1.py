@@ -15,7 +15,7 @@ def num(catalog):
             type_ext.setdefault(extension_name, 0)
         type_ext[extension_name] += 1
     for each in type_ext.keys():
-        print(each+':'+str(type_ext[each]))
+        print(each + ':' + str(type_ext[each]))
 
 
 num(input('Please enter the directory to search:'))

@@ -1,9 +1,7 @@
-print('---imitate the built-in-function "power(x, y)"---')
-
-
-def power(x, y):  # 使用递归算法摸拟pow()
+# 使用递归算法摸拟pow()
+def power(x, y):
     if y:
-        return x * power(x, y-1)
+        return x * power(x, y - 1)
     else:
         return 1
 

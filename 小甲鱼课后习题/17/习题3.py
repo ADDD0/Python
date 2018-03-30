@@ -1,3 +1,4 @@
+# 十进制转二进制
 def dec2bin(x):  # 实现bin()
     temp = binary = ''
     while x:
@@ -10,4 +11,4 @@ def dec2bin(x):  # 实现bin()
 
 
 number = int(input('Decimal number to binary number:'))
-print("It's "+dec2bin(number)+'.')
+print("It's " + dec2bin(number))

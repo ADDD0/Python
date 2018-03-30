@@ -7,10 +7,10 @@ def getdirsize(catalog):
     size = 0
     for i in file:
         if os.path.isdir(os.path.join(catalog, i)):
-            getdirsize(os.path.join(catalog, i))
+            getdirsize(os.path.join(catalog, i))  # 递归调用
         else:
             size += os.path.getsize(os.path.join(catalog, i))
-    print(os.path.basename(catalog)+':'+str(size)+'Bytes')
+    print(os.path.basename(catalog) + ':' + str(size) + 'Bytes')
 
 
 getdirsize(input('Please enter the directory to search:'))

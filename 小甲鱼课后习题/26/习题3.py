@@ -1,3 +1,4 @@
+# 尝试编写一个用户登录程序(尝试将功能封装成函数)
 data = {}
 
 
@@ -23,26 +24,26 @@ def add():
         key = input('Username %s already exists, please re-enter:' % key)
     value = input('Please enter the password:')
     data[key] = value
-    print('Registration success.')
+    print('Registration success')
     menu()
 
 
 def log_in():
     if data == {}:  # 字典中未添加用户时
-        print('Sorry, the program is not logged in by anyone.\nPlease create a new user first.')
+        print('Sorry, the program is not logged in by anyone.\nPlease create a new user first')
         menu()
     count = 3
     while count:  # 三次错误机会
         key_ = input('Please enter user name:')
         value_ = input('Please enter the password:')
         if key_ in data and value_ == data[key_]:  # 用户登录成功
-            print('Sign in successfully.')
+            print('Sign in successfully')
             return menu()       
         print('''The user name does not exist or the password is incorrectly entered.
 Please re-enter the user name and password.
 The time you can re-enter:%d''' % (count-1))
         count -= 1
-    print('Login failed.')
+    print('Login failed')
     return menu()
 
 

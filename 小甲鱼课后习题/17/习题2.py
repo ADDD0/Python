@@ -1,3 +1,4 @@
+# 求两个整数的最大公约数
 def gcd1(a, b):  # 辗转相除法(欧几里得算法)
     while b:
         temp = a % b
@@ -18,4 +19,4 @@ def gcd2(c, d):  # 更相减损法
 print('Calculate the maximum common divisor of x and y')
 x = int(input('x:'))
 y = int(input('y:'))
-print("It's "+str(gcd1(x, y))+'.')
+print("It's " + str(gcd1(x, y)))

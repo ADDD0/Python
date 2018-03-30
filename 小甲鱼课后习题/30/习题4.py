@@ -10,9 +10,9 @@ def search_video(catalog):
     os.chdir(catalog)
     for each in os.listdir(os.curdir):
         if os.path.splitext(each)[1] in search_type:  # 扩展名匹配成功
-            video_path.append(os.getcwd()+os.sep+each+os.linesep)  # os.linesep为当前平台所使用的行终止符
-        if os.path.isdir(each):
-            search_video(catalog+os.sep+each)
+            video_path.append(os.getcwd() + os.sep + each + os.linesep)  # os.linesep为当前平台所使用的行终止符
+        if os.path.isdir(each):  # 若查找到文件夹
+            search_video(catalog + os.sep + each)  # 递归调用
             os.chdir(os.pardir)
 
 

@@ -1,3 +1,4 @@
+# 习题3拓展,用户可以随意输入需要显示的行数
 def file_advanced_view(file_name, rows):
     start, end = rows.split(':')
 
@@ -19,18 +20,17 @@ def file_advanced_view(file_name, rows):
     print(content)
 
     file = open(file_name)
-    lines = int(end)-int(start)+1  # 输出行数
+    lines = int(end) - int(start) + 1  # 输出行数
     if lines < 0:
         print(file.read())
         return
-    for i in range(int(start)-1):  # 读取前面不需要的行，相当于改变指针
+    for i in range(int(start) - 1):  # 读取前面不需要的行,相当于改变指针
         file.readline()
     for j in range(lines):  # 打印目标行
         print(file.readline(), end='')
     file.close()
 
 
-print('----------Output any line----------')
 filename = input('\nPlease enter the file to open:')
-row = input('Please enter the number of rows to display[like 3:5 or 3: or:5]:')  # 不建议使用负数，可能会出现bug
+row = input('Please enter the number of rows to display[like 3:5 or 3: or:5]:')  # 不建议使用负数,可能会出现bug
 file_advanced_view(filename, row)

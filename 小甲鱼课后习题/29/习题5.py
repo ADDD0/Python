@@ -1,3 +1,4 @@
+# 编写一个程序,实现"全部替换"功能
 def replace(file_name, org, sub):
     file_read = open(file_name)
 
@@ -20,7 +21,6 @@ def replace(file_name, org, sub):
     file_read.close()
 
 
-print('----------Replace function----------')
 filename = input('\nPlease enter the file to open:')
 original = input('Please enter the words or characters that need to be replaced:')
 substitute = input('Please enter the new words or characters:')

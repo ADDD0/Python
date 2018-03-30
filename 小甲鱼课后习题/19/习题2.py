@@ -1,7 +1,7 @@
-print('--------Statistics string parameters--------')  # Program 2 判断字符串参数个数
+# 统计字符串的英文字母,空格,数字和其它字符的个数
 
 
-def statistics(*string):
+def statistics(*string):  # 输入参数不唯一
     for j in string:
         letters = 0
         digits = 0
@@ -17,7 +17,7 @@ def statistics(*string):
             else:
                 others += 1
 
-        print('There are %s alphabets,%s numbers,%s blanks and %s special characters.' %
+        print('There are %s alphabets,%s numbers,%s blanks and %s special characters' %
               (letters, digits, spaces, others))
 
 
