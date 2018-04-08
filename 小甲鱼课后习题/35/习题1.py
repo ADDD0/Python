@@ -3,7 +3,7 @@
 import easygui as g
 import random
 
-g.msgbox("--------------Let's play a game--------------")
+g.msgbox("--------------Let's play a game--------------", '习题1')
 answer = random.randint(1, 10)  # 答案为1~10内的某一随机数字
 times = 3  # 初始化计数器
 guess = 0
@@ -13,7 +13,8 @@ while times >= 0:  # 你甚至可以写成while times + 1:
     if times > 0:
         msg = 'Enter a number which you like from 1 to 10:'
         guess = g.integerbox(msg, title, lowerbound=1, upperbound=10)  # 这里已保证guess为整数
-
+        if guess is None:  # 点击cancel键
+            break
         if guess == answer:  # 先判断是否猜对
             if times == 3:  # 再给出计数器信息
                 g.msgbox("Congratulations!You found the right number in only 1 time!\nThat's so cool!", title)
@@ -31,6 +32,6 @@ while times >= 0:  # 你甚至可以写成while times + 1:
                 else:
                     g.msgbox("Hint:That's a less one", title)
     else:
-        g.msgbox("Sorry,you didn't find the right answer,the answer is " + str(answer), title)
+        g.msgbox("Game Over\nthe answer is " + str(answer), title)
         break
     times -= 1
