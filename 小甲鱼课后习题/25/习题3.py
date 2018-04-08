@@ -23,7 +23,7 @@ while 1:
     if IC == '2':
         key = input("Please enter the contact's name:")
         if key not in dic:  # 新建联系人不在字典中
-            value = input('Please enter the user contact number：')
+            value = input('Please enter the user contact number:')
             dic[key] = value
         else:  # 新建联系人在字典中
             print('''The name you entered already exists in the address book
@@ -33,11 +33,14 @@ while 1:
                 value = input('Please enter the new contact number：')
                 dic[key] = value
     if IC == '3':
-        dic.clear()
-        print('Address book has been successfully emptied')
+        key = input("Please enter the contact's name:")
+        if key in dic:
+            del(dic[key])  # 也可以使用dict.pop()
+            print('Address book has been successfully emptied')
+        else:
+            print('Sorry,the program failed to find the contact')
     if IC == '4':
         break
     if IC != '1' and IC != '2' and IC != '3' and IC != '4':
         print('You may entered a wrong instruction code.Please enter the correct instruction code')
-if IC == '4':
-    print('--- Thanks for using address book program ---')
+print('--- Thanks for using address book program ---')

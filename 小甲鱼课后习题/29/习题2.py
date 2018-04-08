@@ -27,7 +27,7 @@ def compare(first_file_name, second_file_name):
     second_file.close()
 
     if differ is False:  # 即differ为空列表时
-        print('The two documents are exactly the same.')
+        print('The two documents are exactly the same')
     else:
         print('The difference between the two documents at: %d' % len(differ))  # 统计不同行的数量
         for each in range(len(differ)):

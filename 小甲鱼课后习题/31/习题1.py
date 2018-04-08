@@ -1,11 +1,12 @@
+# 利用pickle模块完成第29课的'一个任务'
 import pickle
 
 
 def save_file(boy, girl, count):
-    file_name_boy = 'boy_'+str(count)+'.txt'
-    file_name_girl = 'girl_'+str(count)+'.txt'
+    file_name_boy = 'boy_' + str(count) + '.txt'
+    file_name_girl = 'girl_' + str(count) + '.txt'
 
-    boy_file = open(file_name_boy, 'wb')
+    boy_file = open(file_name_boy, 'wb')  # 必须以二进制模式写入
     girl_file = open(file_name_girl, 'wb')
 
     pickle.dump(boy, boy_file)
@@ -16,7 +17,7 @@ def save_file(boy, girl, count):
 
 
 def split_file(file_name):
-    f = open(file_name)
+    f = open(file_name, encoding='utf-8')
 
     boy = []
     girl = []
@@ -35,11 +36,9 @@ def split_file(file_name):
             boy = []
             girl = []
             count += 1
-    save_file(boy, girl, count)
 
     f.close()
 
 
 split_file('对话.txt')
 print('\nSave completed.')
-print('\nThe End')
