@@ -38,7 +38,7 @@ class Record:
 
     def __get__(self, instance, owner):
         try:
-            with open('record_46.txt', 'a') as f:
+            with open('record.txt', 'a') as f:
                 time = t.asctime(t.localtime())
                 f.write('The {0} variable was read at {1}, {0} = {2}'.format(self.record, time, self.value))
                 f.write('\n')
@@ -55,7 +55,7 @@ class Record:
 
     def __set__(self, instance, value):
         self.value = value
-        with open('record_46.txt', 'a') as f:
+        with open('record.txt', 'a') as f:
             time = t.asctime(t.localtime())
             f.write('The {0} variable was modified at {1}, {0} = {2}'.format(self.record, time, self.value))
             f.write('\n')
@@ -63,7 +63,7 @@ class Record:
             pickle.dump(self.value, p)
 
     def __delete__(self, instance):
-        with open('record_46.txt', 'a') as f:
+        with open('record.txt', 'a') as f:
             time = t.asctime(t.localtime())
             f.write('The {0} variable was deleted at {1}'.format(self.record, time))
             f.write('\n')

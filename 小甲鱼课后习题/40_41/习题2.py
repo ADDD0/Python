@@ -3,4 +3,5 @@
 
 class C2F(float):
     def __new__(self, args=0):
+        super(C2F, self).__new__()
         return float.__new__(self, args * 1.8 + 32)

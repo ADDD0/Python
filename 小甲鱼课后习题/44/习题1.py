@@ -1,29 +1,31 @@
+# 定制一个计时器的类,让它能够统计一个函数运行若干次的时间
+# 要求:函数调用次数可以设置(默认一百万次),实现珍上timing()方法用于启动计时器
 import time as t
 
 
 class MyTimer:
     def __init__(self):
         self.begin = self.end = 0
-        self.prompt = 'Please call the start() method first.'
+        self.prompt = 'Please call the start() method first'
 
     def start(self):
         if self.begin:
             print(self.prompt)
         else:
-            self.begin = t.perf_counter()
+            self.begin = t.perf_counter()  # 记录开始时间
             print('Start timing')
-        self.prompt = 'Please call the stop() method first.'
+        self.prompt = 'Please call the stop() method first'
 
     def stop(self):
         if not self.begin:
             print(self.prompt)
         else:
-            self.end = t.perf_counter()
+            self.end = t.perf_counter()  # 记录结束时间
             print('Timing ends')
             self._calc()
-            self.prompt = 'Please call the start() method first.'
+            self.prompt = 'Please call the start() method first'
 
-    def _calc(self):
+    def _calc(self):  # 内部方法
         self.lasted = self.end - self.begin
         self.begin = self.end = 0
 
