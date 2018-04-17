@@ -6,9 +6,16 @@
       <w>funout</w>
       <w>funx</w>
       <w>funy</w>
+      <w>getarea</w>
       <w>getdirsize</w>
+      <w>getlen</w>
+      <w>getrect</w>
+      <w>isempty</w>
+      <w>nextstep</w>
       <w>ordinery</w>
       <w>rmvb</w>
+      <w>setrect</w>
+      <w>sqrt</w>
       <w>sumlines</w>
       <w>videolist</w>
     </words>
