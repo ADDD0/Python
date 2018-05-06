@@ -1,6 +1,7 @@
 <component name="ProjectDictionaryState">
   <dictionary name="Administrator">
     <words>
+      <w>asctime</w>
       <w>findstr</w>
       <w>funin</w>
       <w>funout</w>
@@ -11,7 +12,10 @@
       <w>getlen</w>
       <w>getrect</w>
       <w>isempty</w>
+      <w>leapyears</w>
+      <w>myrev</w>
       <w>nextstep</w>
+      <w>nohty</w>
       <w>nstr</w>
       <w>ordinery</w>
       <w>rmvb</w>

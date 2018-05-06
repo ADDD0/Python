@@ -1,3 +1,5 @@
+# 编写一个程序,计算2000000以内的素数之和
+# 不建议使用列表来存储数列,这个数列很有可能爆掉你的内存
 import math as m
 
 
@@ -7,27 +9,25 @@ def judge(num):  # 不适用于7以内素数求和
     while True:
         a = b = True
         if x1 < num:
-            for j in range(3, int(m.sqrt(x1)+1), 2):  # 优化了一下课后给出的解法
-                if not x1 % j:
+            for i in range(3, int(m.sqrt(x1) + 1), 2):  # 优化了一下课后给出的算法
+                if not x1 % i:
                     a = False
-                    x1 += 6
                     break
-            for j in range(3, int(m.sqrt(x2)+1), 2):
-                if not x2 % j:
+            for i in range(3, int(m.sqrt(x2) + 1), 2):
+                if not x2 % i:
                     b = False
-                    x2 += 6
                     break
             if a:
                 yield x1
-                x1 += 6
             if b:
                 yield x2
-                x2 += 6
+            x1 += 6
+            x2 += 6
         else:
             return 0
 
 
-def solve(num=2000000):
+def solve(num=10):
     total = 5
     for i in judge(num):
         total += i

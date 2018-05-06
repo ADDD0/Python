@@ -21,3 +21,7 @@ The y variable was modified at Sat Feb  3 13:25:21 2018, y = 89
 The y variable was deleted at Sat Feb  3 13:25:26 2018
 The y variable was modified at Sat Feb  3 13:26:45 2018, y = 89
 The y variable was deleted at Sat Feb  3 13:26:48 2018
+The x variable was read at Sun May  6 10:18:59 2018, x = 10
+The x variable was modified at Sun May  6 10:19:39 2018, x = 10
+The x variable was read at Sun May  6 10:20:14 2018, x = 10
+The x variable was deleted at Sun May  6 10:20:25 2018

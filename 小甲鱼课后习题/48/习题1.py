@@ -1,3 +1,4 @@
+# 写一个迭代器,要求输出至今为止的所有闰年
 import time as t
 
 
@@ -20,24 +21,6 @@ class LeapYears:
                 continue
 
 
-class MyRev:
-    def __init__(self, args=None):
-        self.rev = args + args[-1]
-
-    def __iter__(self):
-        return self
-
-    def __next__(self):
-        try:
-            self.rev = self.rev[:-1]
-            return self.rev[-1]
-        except IndexError:
-            raise StopIteration
-
-
 leapyears = LeapYears()
 for each in leapyears:
     print(each)
-myrev = MyRev('nohtyP')
-for each in myrev:
-    print(each, end='')

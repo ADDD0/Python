@@ -1,3 +1,9 @@
+# 定制一个列表,要求实现以下要求:
+# (1)实现获取,设置和删除一个元素的行为(删除元素的时候对应的计数器也会被删除)
+# (2)增加counter(index)方法,返回index函数所指定的元素记录的访问次数
+# (3)实现append(),pop(),remove(),insert(),clear()和reverse()方法
+
+
 class CountList(list):
     def __init__(self, *args):
         super().__init__(args)
